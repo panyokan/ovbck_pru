@@ -13,8 +13,10 @@ export const authOptions = {
       name: 'Credentials',
       credentials: {},
       async authorize(credentials): Promise<any> {
+        console.log("hello")
         try {
           const userCredential = await signInWithEmailAndPassword(auth, (credentials as any).email || '', (credentials as any).password || '');
+          console.log(userCredential)
           const isAdmin = await getAdminMemberByEmail(userCredential.user.email)
           const name = await getNameByEmail(userCredential.user.email, isAdmin);
           if (userCredential.user) {
@@ -22,6 +24,7 @@ export const authOptions = {
           }
           return null;
         } catch (error) {
+          console.error("Authentication error:", error);
           throw new Error('Incorrect email or password');
         }
       }
