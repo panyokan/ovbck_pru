@@ -1,4 +1,3 @@
-'use client';
 import ForgotPassword from "@/app/components/forgotPasswordForm/forgotPassword"
 
 const ForgotPasswordPage: React.FC = () => {

@@ -1,3 +1,4 @@
+'use client';
 import { useState } from 'react';
 import { auth } from '@/app/utils/Firebase/config';
 import { sendPasswordResetEmail } from "firebase/auth";
@@ -6,6 +7,10 @@ const ForgotPassword: React.FC = () => {
   const [email, setEmail] = useState('');
 
   const resetEmail = () => {
+    if (!auth) {
+      console.error('Firebase auth not initialized');
+      return;
+    }
     sendPasswordResetEmail(auth, email);
   };
 
