@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import signup from '../../utils/api/Admin/newAdmin';
+import signup from '@/app/utils/api/Admin/newAdmin';
 // import Loader from '../loader/loader';
 
 const AddAdmin: React.FC = () => {

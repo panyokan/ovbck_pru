@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { signIn, signOut, useSession } from 'next-auth/react'
-import timeSlotApplication from '../../utils/api/Volunteer/timeslotApplication';
+import timeSlotApplication from '@/app/utils/api/Volunteer/timeslotApplication';
 
 const TimeslotApp: React.FC = () => {
     const [signupInfo, setSignupInfo] = useState<string>('');

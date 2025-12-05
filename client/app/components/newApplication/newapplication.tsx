@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { PendingtimeSlotApp } from '../../utils/api/Admin/pendingTimeslotApps';
-import updateTimeSlot from "../../utils/api/Admin/updateTimeSlotStatus";
+import { PendingtimeSlotApp } from '@/app/utils/api/Admin/pendingTimeslotApps';
+import updateTimeSlot from "@/app/utils/api/Admin/updateTimeSlotStatus";
 
 
 interface Application {

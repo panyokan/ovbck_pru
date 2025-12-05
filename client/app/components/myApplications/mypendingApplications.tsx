@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { fetchPendingTimeslots } from '../../utils/api/calander/appointments';
-import updateTimeSlot from "../../utils/api/Admin/updateTimeSlotStatus";
+import { fetchPendingTimeslots } from '@/app/utils/api/calander/appointments';
+import updateTimeSlot from "@/app/utils/api/Admin/updateTimeSlotStatus";
 import { useSession } from 'next-auth/react';
 
 

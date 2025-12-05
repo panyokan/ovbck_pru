@@ -1,5 +1,5 @@
 'use client';
-import ForgotPassword from "../components/forgotPasswordForm/forgotPassword"
+import ForgotPassword from "@/app/components/forgotPasswordForm/forgotPassword"
 
 const ForgotPasswordPage: React.FC = () => {
     return (

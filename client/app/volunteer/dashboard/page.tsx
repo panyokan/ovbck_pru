@@ -1,11 +1,11 @@
 'use client';
 import { signOut, useSession } from 'next-auth/react';
 import { redirect } from 'next/navigation';
-import ApprovedAppointmentsCalendar from '../../components/calendar/calander'
+import ApprovedAppointmentsCalendar from '@/app/components/calendar/calander'
 import TimeslotApp from '@/app/components/timeslotApplication/timeslot';
 import { useState } from 'react';
-import { fetchApprovedAppointments } from '../../utils/api/calander/appointments';
-import AppliedTimeSlots from "../../components/myApplications/mypendingApplications"
+import { fetchApprovedAppointments } from '@/app/utils/api/calander/appointments';
+import AppliedTimeSlots from "@/app/components/myApplications/mypendingApplications"
 import Navbar from '@/app/components/navbar/navbar';
 
 

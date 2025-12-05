@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import timeSlotApplication from '../../utils/api/Volunteer/timeslotApplication';
+import timeSlotApplication from '@/app/utils/api/Volunteer/timeslotApplication';
 import { allApprovedVolunteers } from '@/app/utils/api/Admin/allApprovedVolunteers';
 
 const AdminAppointment: React.FC = () => {

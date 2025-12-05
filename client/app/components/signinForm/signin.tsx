@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { signIn, signOut, useSession } from 'next-auth/react'
-import { getAdminMemberByEmail } from "../../../app/utils/Firebase/config";
+import { getAdminMemberByEmail } from "@/app/utils/Firebase/config";
 
 
 

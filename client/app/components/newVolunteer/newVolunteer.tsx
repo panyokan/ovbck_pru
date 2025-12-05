@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { PendingNewVolunteers } from '../../utils/api/Admin/pendingNewVolunteers';
-import updateVolunteer from "../../utils/api/Admin/updateVolunteerStatus";
+import { PendingNewVolunteers } from '@/app/utils/api/Admin/pendingNewVolunteers';
+import updateVolunteer from "@/app/utils/api/Admin/updateVolunteerStatus";
 
 
 interface Volunteer {

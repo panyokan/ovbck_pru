@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { auth } from '../../utils/Firebase/config';
+import { auth } from '@/app/utils/Firebase/config';
 import { sendPasswordResetEmail } from "firebase/auth";
 
 const ForgotPassword: React.FC = () => {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import signup from '../../utils/api/volunteerSignup';
+import signup from '@/app/utils/api/volunteerSignup';
 
 const Signup: React.FC = () => {
     const [password, setPassword] = useState('');

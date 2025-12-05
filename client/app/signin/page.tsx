@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import Signin from '../components/signinForm/signin';
+import Signin from '@/app/components/signinForm/signin';
 
 const SigninPage: React.FC = () => {
   return (
