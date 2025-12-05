@@ -1,7 +1,7 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth, getNameByEmail, getAdminMemberByEmail } from "../../../app/utils/Firebase/config";
+import { auth, getNameByEmail, getAdminMemberByEmail } from "@/app/utils/Firebase/config";
 
 export const authOptions = {
   // Configure one or more authentication providers
